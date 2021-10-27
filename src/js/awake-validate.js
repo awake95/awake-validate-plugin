@@ -29,18 +29,19 @@ class AwakeValidate {
 
     }
 
-    inputHandler(e) {
-        let target = e.target;
-        const {name, value, type} = target;
-
+    checkValue(value, target, name) {
         if (!value) {
             this.$errors.push({
                 name: name,
             })
-        }else {
+        } else {
             const removeErrors = this.$errors.filter(item => item.name !== name);
             this.$errors = [ ...removeErrors];
-            target.nextElementSibling.remove();
+
+            if (target.nextElementSibling) {
+                target.nextElementSibling.remove();
+            }
+
         }
 
         const existName = this.$errors.find(item => item.name === name);
@@ -48,9 +49,17 @@ class AwakeValidate {
         if (existName) {
             const err = document.createElement('span');
             err.classList.add('error');
-            err.textContent = `${name} is required field and should not be empty`;
+            const nameText = target.parentNode.querySelector('label').textContent;
+            err.textContent = `${nameText} is required field and should not be empty`;
             target.parentNode.insertBefore(err, target.nextSibling);
         }
+    }
+
+    inputHandler(e) {
+        let target = e.target;
+        const {name, value, type} = target;
+
+        this.checkValue(value, target, name);
 
     }
 
