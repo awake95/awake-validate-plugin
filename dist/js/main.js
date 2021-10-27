@@ -1,0 +1,5 @@
+const formValidate = new AwakeValidate('#test-form')
+
+console.log(formValidate.isValid);
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJtYWluLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGZvcm1WYWxpZGF0ZSA9IG5ldyBBd2FrZVZhbGlkYXRlKCcjdGVzdC1mb3JtJylcblxuY29uc29sZS5sb2coZm9ybVZhbGlkYXRlLmlzVmFsaWQpO1xuIl0sImZpbGUiOiJtYWluLmpzIn0=

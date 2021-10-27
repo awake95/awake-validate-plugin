@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/form.css">
+    <link rel="stylesheet" href="dist/css/awake-validate.css">
+</head>
+<body>
+
+<form id="test-form" class="test-form">
+    <div class="test-form__item">
+        <label for="test_form_name">Förnamn</label>
+        <input type="text" required id="test_form_name" name="first_name">
+    </div>
+    <div class="test-form__item">
+        <label for="test_form_surname">Efternamn</label>
+        <input type="text" required id="test_form_surname" name="last_name">
+    </div>
+    <div class="test-form__item">
+        <label for="test_form_email">E-postadress</label>
+        <input type="email" required id="test_form_email" name="email">
+    </div>
+    <div class="test-form__item">
+        <label for="test_form_phone">Mobiltelefon</label>
+        <input type="tel" required id="test_form_phone" name="phone">
+    </div>
+    <div class="test-form__item test-form__item--full">
+        <label for="test_form_address">Adress</label>
+        <input type="text" id="test_form_address" name="address_1">
+    </div>
+    <div class="test-form__item test-form__item--full">
+        <div class="test-form__item--radio">
+            <input type="radio" id="test_form_radio_yes" name="test_radio_buttons">
+            <label for="test_form_radio_yes">Yes</label>
+        </div>
+
+        <div class="test-form__item--radio">
+            <input type="radio" id="test_form_radio_no" name="test_radio_buttons">
+            <label for="test_form_radio_no">No</label>
+        </div>
+
+    </div>
+    <div class="test-form__item test-form__item--full">
+        <label for="test_form_radio_yes">Yes</label>
+        <select name="choose_country" required id="select_country">
+            <option value>Choose an option</option>
+            <option value="SE">Sweden</option>
+            <option value="RU">Russia</option>
+            <option value="US">United States</option>
+        </select>
+    </div>
+    <div class="test-form__item">
+        <label for="test_form_postnumber">Postnummer</label>
+        <input type="text" id="test_form_postnumber" name="postcode">
+    </div>
+    <div class="test-form__item">
+        <label for="test_form_city">Stad</label>
+        <input type="text" id="test_form_city" name="city">
+    </div>
+    <div class="test-form__item test-form__item--full">
+        <label for="test_form_personnumber">Personnummer</label>
+        <input type="text" id="test_form_personnumber" name="personalno">
+    </div>
+    <div class="test-form__item test-form__item--full">
+        <button type="submit" class="test-form__submit">Spara</button>
+    </div>
+</form>
+
+<script src="dist/js/awake-validate.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>
