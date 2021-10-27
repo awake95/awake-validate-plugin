@@ -8,6 +8,10 @@ body {
   box-sizing: border-box;
 }
 
+.invalid {
+  border: 1px solid red !important;
+}
+
 .test-form {
   display: flex;
   justify-content: space-between;
@@ -19,7 +23,8 @@ body {
 
   &__item {
     width: calc(50% - 10px);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
 
     &--full {
       width: 100%;
