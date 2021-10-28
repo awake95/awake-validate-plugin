@@ -8,12 +8,8 @@ body {
   box-sizing: border-box;
 }
 
-.error {
-  position: absolute;
-  top: calc(100% + 5px);
-  left: 0;
-  color: red;
-  font-size: 12px;
+.invalid {
+  border: 1px solid red !important;
 }
 
 .test-form {
@@ -27,7 +23,7 @@ body {
 
   &__item {
     width: calc(50% - 10px);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
 
     &--full {
