@@ -8,6 +8,14 @@ body {
   box-sizing: border-box;
 }
 
+.error {
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 5px);
+  color: red;
+}
+
 .invalid {
   border: 1px solid red !important;
 }
